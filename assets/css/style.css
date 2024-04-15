@@ -60,6 +60,10 @@ ul {
     text-align: center;
 }
 
+h2 {
+    color: #004e89;
+}
+
 .generator-outer-container {
     display: flex;
     justify-content: center;
@@ -111,4 +115,8 @@ form {
     background-color: #ff6b35;
     color: #000000;
     font-weight: bold;
+}
+
+footer {
+    
 }
