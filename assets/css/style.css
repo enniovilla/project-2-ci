@@ -10,8 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     min-height: 100vh;
-    font-weight: 500;
-    background: url(../images/index-bg.webp) no-repeat center/cover;
+    font-weight: 500;    
 }
 
 header {
@@ -81,6 +80,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: url(../images/index-bg.webp) no-repeat center/cover;
 }
 
 h2 {
@@ -162,6 +162,13 @@ form label {
     font-weight: bold;
 }
 
+#faq {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 20px 20px;
+    background: #004e89;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -176,6 +183,7 @@ footer {
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -2px 3px #000000;
     font-weight: bold;
+    position: fixed;
     bottom: 0;
     margin-top: 30px;
 }
