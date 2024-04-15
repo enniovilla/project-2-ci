@@ -10,6 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     min-height: 100vh;
+    font-weight: 500;
 }
 
 header {
@@ -37,7 +38,6 @@ header a {
     margin: 20px;
     text-decoration: none;
     color: #004e89;
-    font-weight: 500;
 }
 
 nav {
@@ -65,7 +65,7 @@ ul {
     justify-content: center;
     padding: 20px;
     height: fit-content;
-    border: 1px solid;
+    border: none;
     border-radius: 10px;
     background: #004e89;
 }
@@ -79,6 +79,7 @@ ul {
     align-items: center;
     border-radius: 10px;
     background-color: #efefd0;
+    border: none;
 }
 
 #password-output {
@@ -93,4 +94,21 @@ ul {
 form {
     display: flex;
     flex-direction: column;
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #004e89;
+    color: #efefd0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #ff6b35;
+    color: #000000;
+    font-weight: bold;
 }
