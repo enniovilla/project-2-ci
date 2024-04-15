@@ -174,7 +174,7 @@ form label {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 500px;
+    max-width: 90%;
 }
 
 .accordion {
@@ -183,6 +183,24 @@ form label {
     padding: 12px;
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 footer {
