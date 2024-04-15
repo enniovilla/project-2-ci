@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Password generator. Completely free and safe to use. Generate strong passwords for every account and get the latest best practices on how to maintain password security and privacy online.">
+    <meta name="keywords"
+        content="password generator, strong password, new password, create new password, random password, generate new password, generate passwords, free password generator">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Password Generator</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/images/logo.png" alt="Logo" id="logo">
+            <h1>Password Generator</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"></a>Home</li>
+                <li><a href="faq.html"></a>FAQ</li>
+                <li class="button"><a href="login.html"></a>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="generator">
+            <h2>Password Generator</h2>
+            <p>Looking for a reliable password? Try the Password Generator to craft complicated passwords ensuring the
+                safety of your information.</p>
+            <div class="generator-outer-container">
+                <div class="generator-inner-container">
+                    <form>
+                        <div id="password-output"></div>
+                        <br>
+                        <button type="button" id="generate-button" class="button">Generate</button>
+                        <button type="button" id="save-button" class="button">Save Password</button>
+                        <br>
+                        <label for="length">Password Length: <span id="length-value">12</span></label>
+                        <input type="range" id="length" name="length" min="4" max="50" value="12" required>
+                        <br>
+                        <label>Character Types:</label>
+                        <label><input type="checkbox" id="lowercase" name="lowercase" checked> Lowercase</label>
+                        <label><input type="checkbox" id="uppercase" name="uppercase" checked> Uppercase</label>
+                        <label><input type="checkbox" id="numbers" name="numbers" checked> Numbers</label>
+                        <label><input type="checkbox" id="symbols" name="symbols" checked> Symbols</label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+
+</html>
