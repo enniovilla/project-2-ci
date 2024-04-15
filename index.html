@@ -31,24 +31,26 @@
     <main>
         <section id="generator">
             <h2>Password Generator</h2>
+            <br>
             <p>Looking for a reliable password? Try the Password Generator to craft complicated passwords ensuring the
                 safety of your information.</p>
+            <br>
             <div class="generator-outer-container">
                 <div class="generator-inner-container">
+                    <div id="password-output"></div>
+                    <br>
+                    <button type="button" id="generate-button" class="button">Generate</button>
+                    <button type="button" id="save-button" class="button">Save Password</button>
+                    <br>
                     <form>
-                        <div id="password-output"></div>
-                        <br>
-                        <button type="button" id="generate-button" class="button">Generate</button>
-                        <button type="button" id="save-button" class="button">Save Password</button>
-                        <br>
                         <label for="length">Password Length: <span id="length-value">12</span></label>
                         <input type="range" id="length" name="length" min="4" max="50" value="12" required>
                         <br>
                         <label>Character Types:</label>
-                        <label><input type="checkbox" id="lowercase" name="lowercase" checked> Lowercase</label>
-                        <label><input type="checkbox" id="uppercase" name="uppercase" checked> Uppercase</label>
-                        <label><input type="checkbox" id="numbers" name="numbers" checked> Numbers</label>
-                        <label><input type="checkbox" id="symbols" name="symbols" checked> Symbols</label>
+                        <label><input type="checkbox" id="lowercase" name="lowercase" checked> Lowercase (a-z)</label>
+                        <label><input type="checkbox" id="uppercase" name="uppercase" checked> Uppercase (A-Z)</label>
+                        <label><input type="checkbox" id="numbers" name="numbers" checked> Numbers (0-9)</label>
+                        <label><input type="checkbox" id="symbols" name="symbols" checked> Symbols (!@#$%^&*)</label>
                     </form>
                 </div>
             </div>
