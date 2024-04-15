@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.getElementById('password-output').textContent = password;
     }
+    // show a password as soon as the page is loaded/reloaded
+    generatePassword();
 
     // length value changes as the range goes up
     const lengthInput = document.getElementById('length');
