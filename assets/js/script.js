@@ -21,13 +21,22 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Please select at least one character type.');
             return;
         }
-        // combine all selected characters into one string
-        const allCharacters = characters.join('');
         let password = '';
-        // generate random password
-        for (let i = 0; i < length; i++) {
-            password += allCharacters.charAt(Math.floor(Math.random() * allCharacters.length));
+        // ensure at least one character from each selected character type
+        for (let i = 0; i < characters.length; i++) {
+            password += characters[i].charAt(Math.floor(Math.random() * characters[i].length));
         }
+
+        // fill the rest of the password with random characters
+        for (let i = password.length; i < length; i++) {
+            const randomTypeIndex = Math.floor(Math.random() * characters.length);
+            password += characters[randomTypeIndex].charAt(Math.floor(Math.random() * characters[randomTypeIndex].length));
+        }
+
+        // shuffle the password characters to make it more random
+        password = password.split('').sort(function () {
+            return Math.random() - 0.5;
+        }).join('');
 
         document.getElementById('password-output').textContent = password;
     }
