@@ -180,7 +180,7 @@ form label {
 }
 
 .accordion {
-    background-color: #fff;
+    background-color: #efefd0;
     border-radius: 8px;
     padding: 12px;
     cursor: pointer;
@@ -206,12 +206,15 @@ form label {
 }
 
 .accordion-body {
-    color: #444;
     font-size: 14px;
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: opacity .3s;
+    transition: opacity .5s;
+}
+
+.accordion-body ol {
+    margin-left: 25px;
 }
 
 .accordion-body.active {
