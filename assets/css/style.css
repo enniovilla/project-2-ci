@@ -71,7 +71,11 @@ nav {
     text-align: center;
 }
 
-
+main {
+    min-height: 100vh;
+    background: radial-gradient(circle, #efefd0, #a4cbae, #51a6a2, #007c9d, #004e89);
+    padding: 0 0 50px;
+}
 
 #generator-page {
     display: flex;
@@ -80,8 +84,6 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url(../images/index-bg.webp) no-repeat center/cover;
-    min-height: 100vh;
 }
 
 h2 {
@@ -176,9 +178,7 @@ form label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 200px 20px 20px;
-    background: url(../images/faq-bg.webp) no-repeat center/cover;
-    min-height: 100vh;
+    padding: 20px 20px;
 }
 
 #faq-page h2 {
@@ -194,7 +194,7 @@ form label {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .accordion {
@@ -254,8 +254,6 @@ form label {
     justify-content: center;
     min-height: 100vh;
     padding: 100px 30px 0;
-    background: radial-gradient(circle, #efefd0, #a4cbae, #51a6a2, #007c9d, #004e89);
-    ;
 }
 
 .saved-passwords-container {
@@ -295,9 +293,7 @@ footer {
 
 @media screen and (min-width: 442px) {
 
-    #generator-page,
-    #faq-page,
-    #saved-passwords-page {
+    #generator-page {
         padding-top: 170px;
         min-height: 100vh;
     }    
@@ -312,13 +308,9 @@ footer {
         padding: 20px 20px;
     }
 
-    #generator-page,
-    #faq-page,
-    #saved-passwords-page {
+    #generator-page {
         padding-top: 100px;
     }
-
-    
 
     .saved-passwords-container {
         margin: 70px 0 30px;
