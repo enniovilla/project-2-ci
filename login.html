@@ -23,36 +23,29 @@
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="login.html" class="button">Login</a></li>
+                <li><button class="button" id="show-login">Login</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="generator-page">
-            <div class="generator-outer-container">
-                <div class="generator-inner-container">
-                    <h2>Password Generator</h2>
-                    <br>
-                    <p>Looking for a reliable password? Try the Password Generator to craft complicated passwords ensuring the
-                        safety of your information!</p>
-                    <br>
-                    <div id="password-output"></div>
-                    <br>
-                    <div class="button-container">
-                        <button type="button" id="generate-button" class="button">Generate</button>
-                        <button type="button" id="save-button" class="button">Save Password</button>
+        <section id="login-page">
+            <div class="login-container">
+                <div class="form">
+                    <h2>Login</h2>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Enter email" required>
                     </div>
-                    <br>
-                    <label for="length">Password Length: <span id="length-value">12</span></label>
-                    <input type="range" id="length" name="length" min="4" max="80" value="12" required>
-                    <br>
-                    <label>Character Types:</label>
-                    <form>
-                        <label><input type="checkbox" id="lowercase" name="lowercase" checked> Lowercase (a-z)</label>
-                        <label><input type="checkbox" id="uppercase" name="uppercase" checked> Uppercase (A-Z)</label>
-                        <label><input type="checkbox" id="numbers" name="numbers" checked> Numbers (0-9)</label>
-                        <label><input type="checkbox" id="symbols" name="symbols" checked> Symbols (!@#$%^&*)</label>
-                    </form>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter password" required>
+                    </div>
+                    <div class="form-element">
+                        <button>Sign in</button>
+                    </div>
+                    <div class="form-element">
+                        <a href="#">Forgot password?</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,7 +63,7 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/1014f68af8.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
