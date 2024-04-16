@@ -165,11 +165,21 @@ form label {
 
 #faq {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 200px 20px 20px;
     background: url(../images/faq-bg.webp) no-repeat center/cover;
     min-height: 100vh;
+}
+
+#faq h2 {
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: #efefd0;
+    border-radius: 10px;    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 #faq-container {
