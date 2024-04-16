@@ -52,6 +52,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     updateLengthValue();
-    lengthInput.addEventListener('input', updateLengthValue);
-
+    lengthInput.addEventListener('input', updateLengthValue);    
 });
