@@ -134,6 +134,10 @@ h2 {
     justify-content: center;
 }
 
+#generate-button, #save-button {
+    font-weight: bold;
+}
+
 form {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +157,6 @@ form label {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
     margin: 5px;
 }
 
