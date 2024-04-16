@@ -268,7 +268,7 @@ form label {
     margin: 15px 0px;
 }
 
-.login-container .form .form-element input[type="text"],
+.login-container .form .form-element input[type="email"],
 .login-container .form .form-element input[type="password"] {
     margin-top: 5px;
     display: block;
@@ -293,9 +293,10 @@ form label {
     font-weight: bold;
 }
 
-.form-element:nth-of-type(3) {
+#login-page .form-element:nth-of-type(3),  #register-page .form-element:nth-of-type(4){
     display: flex;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .login-container .form .form-element button:hover {
@@ -310,6 +311,65 @@ form label {
 
 .login-container .form .form-element #create-account {
     display: inline;
+}
+
+#register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 10px 0;
+    background: radial-gradient(circle, #efefd0, #a4cbae, #51a6a2, #007c9d, #004e89);
+    ;
+}
+
+.register-container {
+    min-width: 50%;
+    padding: 20px 30px;
+    background-color: #efefd0;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.register-container .form h2 {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.register-container .form .form-element {
+    margin: 15px 0px;
+}
+
+.register-container .form .form-element input[type="text"],
+.register-container .form .form-element input[type="email"],
+.register-container .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-container .form .form-element input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.register-container .form .form-element button {
+    width: 50%;
+    padding: 10px 20px;
+    background-color: #004e89;
+    color: #efefd0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.register-container .form .form-element button:hover {
+    background-color: #ff6b35;
+    color: #000000;
+    font-weight: bold;
 }
 
 footer {
