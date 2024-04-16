@@ -70,10 +70,6 @@ nav {
     padding: 0 20px;
 }
 
-#menu .button {
-    margin: 0 0 5px;
-}
-
 #generator-page {
     display: flex;
     flex-direction: column;
