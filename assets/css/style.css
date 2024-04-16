@@ -77,7 +77,7 @@ main {
     padding: 0 0 50px;
 }
 
-#generator-page {
+#generator-section {
     display: flex;
     flex-direction: column;
     padding: 200px 20px 20px;
@@ -173,7 +173,7 @@ form label {
     font-weight: bold;
 }
 
-#faq-page {
+#faq-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +181,7 @@ form label {
     padding: 20px 20px;
 }
 
-#faq-page h2 {
+#faq-section h2 {
     padding: 10px;
     margin-bottom: 40px;
     background-color: #efefd0;
@@ -293,7 +293,7 @@ footer {
 
 @media screen and (min-width: 442px) {
 
-    #generator-page {
+    #generator-section {
         padding-top: 170px;
         min-height: 100vh;
     }    
@@ -308,7 +308,7 @@ footer {
         padding: 20px 20px;
     }
 
-    #generator-page {
+    #generator-section {
         padding-top: 100px;
     }
 
