@@ -172,6 +172,41 @@ form label {
     font-weight: bold;
 }
 
+#saved-passwords-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.saved-passwords-container {
+    max-width: 80%;
+    min-height: 300px;
+    padding: 20px;
+    background-color: #efefd0;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    text-align: center;
+    word-break: break-all;
+    line-height: 25px;
+}
+
+.saved-passwords-container h2 {
+    margin-bottom: 20px;
+}
+
+#saved-passwords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#saved-passwords div {
+    
+}
+
 #faq-section {
     display: flex;
     flex-direction: column;
@@ -246,23 +281,6 @@ form label {
 
 .accordion:has(.active) .arrow {
     transform: rotate(180deg);
-}
-
-#saved-passwords-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.saved-passwords-container {
-    min-width: 50%;
-    min-height: 300px;
-    padding: 20px;
-    background-color: #efefd0;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    text-align: center;
 }
 
 footer {
