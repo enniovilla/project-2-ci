@@ -63,6 +63,7 @@ nav {
     display: flex;
     align-items: center;
     list-style-type: none;
+    font-weight: 600;
 }
 
 #menu li {
@@ -334,14 +335,14 @@ footer {
 }
 
 @media screen and (min-width: 442px) {
-    #generator {
+    #generator-page, #faq-page, .login-page {
         padding-top: 170px;
         min-height: 100vh;
     }
 }
 
-@media screen and (min-width: 733px) {
-    #generator {
-        padding-top: 130px;
+@media screen and (min-width: 479px) {
+    #generator-page, #faq-page, .login-page {
+        padding-top: 100px;
     }
 }
