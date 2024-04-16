@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.getElementById('password-output').textContent = password;
     }
+
     // show a password as soon as the page is loaded/reloaded
     generatePassword();
 
@@ -53,6 +54,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateLengthValue();
     lengthInput.addEventListener('input', updateLengthValue);
+
+    // save generated password when the save button is clicked
+    document.getElementById('save-button').addEventListener('click', savePassword);
+
+    function savePassword() {
+        const generatedPassword = document.getElementById('password-output').textContent;
+        const savedPasswordsDiv = document.getElementById('saved-passwords');
+
+        // create a new div element to hold the saved password
+        const passwordDiv = document.createElement('div');
+        passwordDiv.textContent = generatedPassword;
+
+        // append the saved password div to the #saved-passwords div
+        savedPasswordsDiv.appendChild(passwordDiv);
+    }
 
     // FAQ accordion animation
     const accordions = document.querySelectorAll('.accordion');
