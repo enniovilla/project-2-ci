@@ -134,8 +134,14 @@ h2 {
     justify-content: center;
 }
 
-#generate-button, #save-button {
+#generate-button,
+#save-button {
     font-weight: bold;
+}
+
+input[type='range'],
+input[type="checkbox"] {
+    accent-color: #004e89;
 }
 
 form {
@@ -296,7 +302,8 @@ form label {
     font-weight: bold;
 }
 
-#login-page .form-element:nth-of-type(3),  #register-page .form-element:last-child {
+#login-page .form-element:nth-of-type(3),
+#register-page .form-element:last-child {
     display: flex;
     justify-content: center;
     padding: 20px 0;
@@ -400,14 +407,20 @@ footer {
 }
 
 @media screen and (min-width: 442px) {
-    #generator-page, #faq-page, .login-page {
+    
+    #generator-page,
+    #faq-page,
+    .login-page {
         padding-top: 170px;
         min-height: 100vh;
     }
 }
 
 @media screen and (min-width: 479px) {
-    #generator-page, #faq-page, .login-page {
+
+    #generator-page,
+    #faq-page,
+    .login-page {
         padding-top: 100px;
     }
 }
