@@ -252,24 +252,21 @@ form label {
 #saved-passwords-page {
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    padding: 100px 10px 0;
+    padding: 100px 30px 0;
     background: radial-gradient(circle, #efefd0, #a4cbae, #51a6a2, #007c9d, #004e89);
     ;
 }
 
 .saved-passwords-container {
     min-width: 50%;
-    padding: 20px 30px;
+    min-height: 100px;
+    padding: 20px;
     background-color: #efefd0;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-}
-
-.saved-passwords-container .form h2 {
     text-align: center;
-    margin: 10px 0 20px;
+    margin: 100px 0 30px;
 }
 
 #register-page {
@@ -326,6 +323,10 @@ footer {
     #saved-passwords-page {
         padding-top: 170px;
         min-height: 100vh;
+    }    
+
+    .saved-passwords-container {
+        margin: 10px 0 30px;
     }
 }
 
@@ -336,7 +337,13 @@ footer {
 
     #generator-page,
     #faq-page,
-    .saved-passwords-page {
+    #saved-passwords-page {
         padding-top: 100px;
+    }
+
+    
+
+    .saved-passwords-container {
+        margin: 70px 0 30px;
     }
 }
