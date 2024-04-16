@@ -17,8 +17,10 @@
 
 <body>
     <header>
-        <a href="index.html"><h1><img src="assets/images/logo.png" alt="Logo" id="logo">Password Generator</h1>
+        <a href="index.html">
+            <h1><img src="assets/images/logo.png" alt="Logo" id="logo">Password Generator</h1>
         </a>
+        <!-- menu -->
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
@@ -28,14 +30,17 @@
         </nav>
     </header>
     <main>
+        <!-- password generator area -->
         <section id="generator-section">
             <div class="generator-outer-container">
                 <div class="generator-inner-container">
                     <h2>Password Generator</h2>
                     <br>
-                    <p>Looking for a reliable password? Try the Password Generator to craft complicated passwords ensuring the
+                    <p>Looking for a reliable password? Try the Password Generator to craft complicated passwords
+                        ensuring the
                         safety of your information!</p>
                     <br>
+                    <!-- password display -->
                     <div id="password-output"></div>
                     <br>
                     <div class="button-container">
@@ -47,6 +52,7 @@
                     <input type="range" id="length" name="length" min="4" max="80" value="12" required>
                     <br>
                     <label>Character Types:</label>
+                    <!-- password generator characters -->
                     <form>
                         <label><input type="checkbox" id="lowercase" name="lowercase" checked> Lowercase (a-z)</label>
                         <label><input type="checkbox" id="uppercase" name="uppercase" checked> Uppercase (A-Z)</label>
@@ -56,15 +62,18 @@
                 </div>
             </div>
         </section>
+        <!-- saved passwords area-->
         <section id="saved-passwords-section">
             <div class="saved-passwords-container">
                 <h2>Your Saved Passwords</h2>
                 <div id="saved-passwords"></div>
             </div>
         </section>
+        <!-- FAQ area -->
         <section id="faq-section">
             <h2>Frequently Asked Questions</h2>
             <div id="faq-container">
+                <!-- question -->
                 <div class="accordion">
                     <button class="accordion-header">
                         <span>
@@ -87,7 +96,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- question -->
                 <div class="accordion">
                     <button class="accordion-header">
                         <span>
@@ -95,7 +104,6 @@
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
-
                     <div class="accordion-body">
                         <p>
                             Having a unique password for each of your accounts is essential because it prevents a
@@ -108,7 +116,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- question -->
                 <div class="accordion">
                     <button class="accordion-header">
                         <span>
@@ -116,7 +124,6 @@
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
-
                     <div class="accordion-body">
                         <p>
                             Creating a random password enhances its security by making it more difficult for attackers
@@ -132,7 +139,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- question -->
                 <div class="accordion">
                     <button class="accordion-header">
                         <span>
@@ -140,7 +147,6 @@
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
-
                     <div class="accordion-body">
                         <p>
                             Password generators use algorithms to create random or pseudo-random sequences of characters
@@ -157,7 +163,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- question -->
                 <div class="accordion">
                     <button class="accordion-header">
                         <span>
@@ -165,7 +171,6 @@
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
-
                     <div class="accordion-body">
                         <p>
                             A password generator can indeed be safe to use, provided you take certain precautions.
@@ -181,7 +186,7 @@
                             indeed be a valuable tool for enhancing your online security. </p>
                     </div>
                 </div>
-
+                <!-- question -->
                 <div class="accordion">
                     <button class="accordion-header">
                         <span>
@@ -189,7 +194,6 @@
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
-
                     <div class="accordion-body">
                         <p>
                             A strong password is one that possesses several key characteristics to withstand various
@@ -206,7 +210,7 @@
                             protect their online accounts and personal information. </p>
                     </div>
                 </div>
-
+                <!-- question -->
                 <div class="accordion">
                     <button class="accordion-header">
                         <span>
@@ -214,7 +218,6 @@
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
-
                     <div class="accordion-body">
                         <p>
                             Password generators themselves are not typically vulnerable to hacking, as they are tools
@@ -233,7 +236,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- question -->
                 <div class="accordion">
                     <button class="accordion-header">
                         <span>
@@ -241,7 +244,6 @@
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
-
                     <div class="accordion-body">
                         <p>
                             The top 10 worst passwords often include easily guessable or common phrases that offer
