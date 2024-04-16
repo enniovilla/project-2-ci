@@ -1,110 +1,183 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Password Generator
 
-Welcome Ennio Villa,
+In the digital age, a password generator is an essential tool. Its main purpose is to enhance online security by creating strong, random passwords. By combining letters, numbers, and special characters, password generators output unique and complex passwords that are very difficult to crack. These passwords act as the first line of defence against unauthorized access to sensitive information, protecting personal data, bank accounts, and confidential documents. It's not just convenient but rather necessary for people and institutions to encounter sort of password generator in this age of cyber attacks, which guarantees a bit of mind when the world is more and more interconnected.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+**Sing! Dance! Act!**
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Visit the deployed website here → [Password Generator]()
 
-## Gitpod Reminders
+![Password Generator](documentation/am-i-responsive.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Content
 
-`python3 -m http.server`
+* [User Experience](#user-experience-ux)
+    * [User Stories](#user-stories)
+* [Design](#design)
+    * [Website Structure](#website-structure)
+    * [Wireframes](#wireframes)
+    * [Color Scheme](#color-scheme)
+    * [Typography](#typography)
+* [Features and Future Features](#features-and-future-features)
+    * [Features](#features)
+    * [Future Features](#future-features)
+* [Technologies Used](#technologies-used)
+* [Deployment, Fork and Clone](#deployment-fork-and-clone)
+    * [Deployment](#deployment)
+    * [Fork](#how-to-fork)
+    * [Clone](#how-to-clone)
+* [Testing](#testing)
+* [Bugs](#bugs)
+    * [Known Bugs](#known-bugs)
+* [Credits](#credits)
+* [Content](#content)
+* [Media](#media)
+* [Acknowledgments](#acknowledgments)
 
-A blue button should appear to click: _Make Public_,
+## User Experience (UX)
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### First Time User
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+#### Returning User
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Frequent User
 
-To log into the Heroku toolbelt CLI:
+[Back to top](<#content>)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Design
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Website Structure
 
-------
+### Wireframes
 
-## Release History
+Figma was the software I opted to create the wireframes. I created wireframes for mobile and desktop. Click on the button below to see them.
+<details>
+<summary>Wireframes</summary>
+<br><br>
+Home page<br>
+<img src="documentation/figma-home.png">
+<br><br>
+About us page<br>
+<img src="documentation/figma-aboutus.png">
+<br><br>
+Courses page<br>
+<img src="documentation/figma-courses.png">
+<br><br>
+Gallery page<br>
+<img src="documentation/figma-gallery.png">
+<br><br>
+Contact page<br>
+<img src="documentation/figma-contact.png">
+<br><br>
+Sign Up page<br>
+<img src="documentation/figma-signup.png">
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Color Scheme
 
-**September 20 2023:** Update Python version to 3.9.17.
+- I used the color `#FCDAD7` in the navigation bar.
+- I used the color `#F05244` for the edges of the containers on every page of the website. This color also appears when the user hovers over the buttons and the posters on the main page.
+- The gradient in the background is made with the colors `#26174B` and `#FCDAD7`.
+- On the buttons I chose `#AB2D8` to be the color.
+- The logo has three colors: `#F05244`, `#AB2D8` and `#5E276F`.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![MTB Color Scheme](documentation/coolors.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Typography
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The font I chose to use is [Montserrat](https://fonts.google.com/specimen/Montserrat) from Google Fonts and as a fall back font, sans-serif.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+[Back to top](<#content>)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Features and Future Features
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Features
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### The Home Page
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### The About Us Page
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### The Courses Page
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Gallery Page
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Contact Page
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Sign Up Page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Form Submitted Page
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Future Features
 
-------
+[Back to top](<#content>)
 
-## FAQ about the uptime script
+## Technologies Used
 
-**Why have you added this script?**
+- HTML5 to create the website structure.
+- CSS3 to style the website.
+- JavaScript to create the interactions on the website.
+- [Git](https://git-scm.com/) for version control.
+- [GitPod](https://www.gitpod.io/) as IDE to create the website.
+- [GitHub](https://github.com/) to store files for the website.
+- [Figma](https://www.figma.com/) to create the wireframes.
+- [Chat GPT](https://chat.openai.com/) to generate the paragraphs on the FAQ page.
+- [Google Fonts](https://fonts.google.com/) to import the font used on the website.
+- [Favicon.io](https://favicon.io/) to create favicon.
+- [Am I Responsive?](https://ui.dev/amiresponsive) to display the website image across various devices.
+- [Font Awesome](https://fontawesome.com/) to add icons on the website.
+- [Pixelied](https://pixelied.com/) to convert images to WebP.
+- [Tinify](https://tinypng.com/) to compress images.
+- [Appetize.io](https://appetize.io/) to simulate the iOS environment.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+[Back to top](<#content>)
 
-**How will this affect me?**
+## Deployment, Fork and Clone
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Deployment
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+1. Log in to GitHub.
+2. Go to the repository for the project.
+3. Click the settings button.
+4. Select **Pages** in the left navigation menu under Code and Automation.
+5. From the source dropdown select main branch and root. Press the save button.
+6. The site has been deployed. It may take a few minutes before the site goes live.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### How to Fork
 
-**So….?**
+1. Log in to GitHub.
+2. Go to the repository for the project.
+3. Click the Fork button in the top right corner.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### How to Clone
 
-**Can I opt out?**
+1. Log in to GitHub.
+2. Go to the repository for the project.
+3. Click on the **green code button** and select if you would like to clone with HTTPS, SSH or GitHub CLI and copy the link below.
+4. Navigate to the directory where you want to clone the repository and open terminal.
+5. Type *git clone* into the terminal and paste the link you have from number 3. Press enter. This command will download the entire repository to your local machine.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+[Back to top](<#content>)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Testing
 
-**Anything more?**
+Performed tests can be found in [TESTING.md](TESTING.md).
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+[Back to top](<#content>)
 
----
+## Bugs
 
-Happy coding!
+### Known Bugs
+
+[Back to top](<#content>)
+
+## Credits
+
+## Content
+
+## Media
+
+## Acknowledgments
+
+[Back to top](<#content>)
