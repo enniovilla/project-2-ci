@@ -65,19 +65,20 @@ Home page<br>
 FAQ page<br>
 <img src="documentation/figma-faq.png">
 <br><br>
-Courses page<br>
+Question container opened<br>
 <img src="documentation/figma-faq-open.png">
 </details>
 
 ### Color Scheme
 
-- I used the color `#FCDAD7` in the navigation bar.
-- I used the color `#F05244` for the edges of the containers on every page of the website. This color also appears when the user hovers over the buttons and the posters on the main page.
-- The gradient in the background is made with the colors `#26174B` and `#FCDAD7`.
-- On the buttons I chose `#AB2D8` to be the color.
-- The logo has three colors: `#F05244`, `#AB2D8` and `#5E276F`.
+I wanted this website to be clean and simple so I chose a contrast of light and dark colors.
 
-![MTB Color Scheme](documentation/coolors.png)
+- the most used colors were `#EFEFD0` and `#004E89`, which also make up the background gradient.
+- `#FF0000` was chosen as the color to represent the delete buttons.
+- `#F9F9F9` is the color of the password display, making the background not so aggressive because of the white, but at the same time light enough to make the color of the characters stand out.
+- The hover of the main buttons is colored `#FF6B35`, giving a nice contrast to them.
+
+![Password Generator](documentation/coolors.png)
 
 ### Typography
 
