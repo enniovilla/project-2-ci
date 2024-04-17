@@ -2,9 +2,7 @@
 
 In the digital age, a password generator is an essential tool. Its main purpose is to enhance online security by creating strong, random passwords. By combining letters, numbers, and special characters, password generators output unique and complex passwords that are very difficult to crack. These passwords act as the first line of defence against unauthorized access to sensitive information, protecting personal data, bank accounts, and confidential documents. It's not just convenient but rather necessary for people and institutions to encounter sort of password generator in this age of cyber attacks, which guarantees a bit of mind when the world is more and more interconnected.
 
-**Sing! Dance! Act!**
-
-Visit the deployed website here → [Password Generator]()
+Visit the deployed website here → [Password Generator](https://enniovilla.github.io/project-2-ci/index.html)
 
 ![Password Generator](documentation/am-i-responsive.png)
 
