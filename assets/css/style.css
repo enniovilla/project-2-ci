@@ -180,7 +180,7 @@ form label {
 }
 
 .saved-passwords-container {
-    max-width: 80%;
+    max-width: 90%;
     min-height: 300px;
     padding: 20px;
     background-color: #efefd0;
@@ -190,8 +190,18 @@ form label {
     line-height: 25px;
 }
 
-.saved-passwords-container h2, .saved-passwords-container > button {
+.saved-passwords-container h2 {
     margin-bottom: 20px;
+}
+
+#delete-all {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: #f0f0d1;
+    font-weight: bold;
+    margin: 10px 0 20px;
 }
 
 #saved-passwords {
