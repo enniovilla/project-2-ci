@@ -79,12 +79,26 @@ document.addEventListener('DOMContentLoaded', function () {
         // create a delete button
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'X';
+
+        // add styles for hover effect and cursor
         deleteButton.style.backgroundColor = 'transparent';
         deleteButton.style.border = 'none';
         deleteButton.style.cursor = 'pointer';
         deleteButton.style.marginLeft = '5px';
 
-        // append the saved password div to the #saved-passwords div
+        // add hover effect
+        deleteButton.addEventListener('mouseover', function () {
+            deleteButton.style.backgroundColor = 'red';
+            deleteButton.style.color = '#efefd0';
+        });
+
+        deleteButton.addEventListener('mouseout', function () {
+            deleteButton.style.backgroundColor = 'transparent';
+            deleteButton.style.color = 'black';
+        });
+
+        // append the delete button and saved password div to the #saved-passwords div
+        passwordDiv.appendChild(deleteButton);
         savedPasswordsDiv.appendChild(passwordDiv);
     }
 });
