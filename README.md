@@ -127,10 +127,8 @@ In the future I would like to add a login page, sign up page and dashboard, so t
 - [Chat GPT](https://chat.openai.com/) to generate the paragraphs on the FAQ page.
 - [Google Fonts](https://fonts.google.com/) to import the font used on the website.
 - [Favicon.io](https://favicon.io/) to create favicon.
-- [Am I Responsive?](https://ui.dev/amiresponsive) to display the website image across various devices.
+- [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/) to display the website across multiple devices.
 - [Font Awesome](https://fontawesome.com/) to add icons on the website.
-- [Pixelied](https://pixelied.com/) to convert images to WebP.
-- [Tinify](https://tinypng.com/) to compress images.
 - [Appetize.io](https://appetize.io/) to simulate the iOS environment.
 
 [Back to top](<#content>)
