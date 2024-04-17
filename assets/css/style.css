@@ -204,6 +204,10 @@ form label {
     margin: 10px 0 20px;
 }
 
+#delete-all:hover {
+    background-color: rgb(207, 0, 0);
+}
+
 #saved-passwords {
     display: flex;
     flex-wrap: wrap;
