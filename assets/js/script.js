@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // no passwords to delete, show an alert
             Swal.fire({
                 title: "You don't have passwords to delete.",
+                color: '#000000',
                 background: '#efefd0'
             });
             return;
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Are you sure you want to delete all passwords?',
             text: 'This action cannot be undone.',
             background: '#efefd0',
+            color: '#000000',
             icon: 'warning',
             iconColor: '#a30000',
             showCancelButton: true,
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 Swal.fire({
                     title: 'Deleted!',
                     iconColor: '#008000',
+                    color: '#000000',
                     text: 'Your passwords have been deleted.',
                     background: '#efefd0',
                     icon: 'success'
@@ -72,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (characters.length === 0) {
             Swal.fire({
                 title: 'Please select at least one character type.',
+                color: '#000000',
                 background: '#efefd0'
             });
             return;
@@ -132,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (savedPasswords[i].textContent === generatedPassword) {
                 Swal.fire({
                     title: 'This password is already saved.',
+                    color: '#000000',
                     background: '#efefd0'
                 });
                 return;
@@ -143,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // inform the user that they need to delete a password before saving a new one
             Swal.fire({
                 title: 'You already have 10 saved passwords. Please delete one of them before saving a new password.',
+                color: '#000000',
                 background: '#efefd0'
             });
             return;
@@ -174,6 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // alert user that the password has been saved
         Swal.fire({
             title: 'Password saved successfully!',
+            color: '#000000',
             background: '#efefd0'
         });
     }
@@ -184,6 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Are you sure you want to delete this password?',
             text: "You won't be able to revert this!",
             icon: 'warning',
+            color: '#000000',
             iconColor: '#a30000',
             background: '#efefd0',
             showCancelButton: true,
@@ -197,6 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 Swal.fire({
                     title: 'Deleted!',
                     text: 'Your password has been deleted.',
+                    color: '#000000',
                     iconColor: '#008000',
                     background: '#efefd0',
                     icon: 'success'
