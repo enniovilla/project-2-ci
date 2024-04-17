@@ -55,6 +55,16 @@ document.addEventListener('DOMContentLoaded', function () {
     updateLengthValue();
     lengthInput.addEventListener('input', updateLengthValue);
 
+    // FAQ accordion animation
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', () => {
+            const body = accordion.querySelector('.accordion-body');
+            body.classList.toggle('active');
+        })
+    })
+
     // save generated password when the save button is clicked
     document.getElementById('save-button').addEventListener('click', savePassword);
 
@@ -66,17 +76,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const passwordDiv = document.createElement('div');
         passwordDiv.textContent = generatedPassword;
 
+        // create a delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'X';
+        deleteButton.style.backgroundColor = 'transparent';
+        deleteButton.style.border = 'none';
+        deleteButton.style.cursor = 'pointer';
+        deleteButton.style.marginLeft = '5px';
+
         // append the saved password div to the #saved-passwords div
         savedPasswordsDiv.appendChild(passwordDiv);
     }
-
-    // FAQ accordion animation
-    const accordions = document.querySelectorAll('.accordion');
-
-    accordions.forEach(accordion => {
-        accordion.addEventListener('click', () => {
-            const body = accordion.querySelector('.accordion-body');
-            body.classList.toggle('active');
-        })
-    })
 });
