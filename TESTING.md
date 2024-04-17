@@ -12,6 +12,7 @@ Visit the deployed website here → [Password Generator](https://enniovilla.gith
 * [Automated Testing](#automated-testing)
     * [W3C Validator](#w3c-validator)
     * [CSS Validator](#css-validator)
+    * [JavaScript Validator](#javascript-validator)
     * [Lighthouse](#lighthouse)
 
 ## Testing User Stories
@@ -83,8 +84,14 @@ The CSS was validated by [W3C Jigsaw](https://jigsaw.w3.org/css-validator/) and 
 
 ### Lighthouse
 
-#### Mobile Results
+I used Lighthouse to test the full performance of the website.
 
-#### Desktop Results
+- Mobile
+
+![Mobile](documentation/lighthouse/mobile.png)
+
+- Desktop
+
+![Desktop](documentation/lighthouse/desktop.png)
 
 [Back to top](<#content>)
