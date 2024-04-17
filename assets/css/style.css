@@ -190,7 +190,7 @@ form label {
     line-height: 25px;
 }
 
-.saved-passwords-container h2, .saved-passwords-container p {
+.saved-passwords-container h2, .saved-passwords-container > button {
     margin-bottom: 20px;
 }
 
@@ -324,5 +324,9 @@ footer {
 
     #generator-section {
         padding-top: 100px;
+    }
+
+    .saved-passwords-container {
+        max-width: 60%;
     }
 }
