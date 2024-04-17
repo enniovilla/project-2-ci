@@ -145,5 +145,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // append the delete button and saved password div to the #saved-passwords div
         passwordDiv.appendChild(deleteButton);
         savedPasswordsDiv.appendChild(passwordDiv);
+
+        // alert user that the password has been saved
+        alert('Password saved successfully!');
     }
 });
