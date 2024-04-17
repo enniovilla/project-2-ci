@@ -17,8 +17,8 @@
 
 <body>
     <header>
-        <a href="index.html">
-            <h1><img src="assets/images/logo.png" alt="Logo" id="logo">Password Generator</h1>
+        <a href="index.html" aria-label="Go to homepage">
+            <h1><img src="assets/images/logo.png" alt="Password Generator Logo." id="logo">Password Generator</h1>
         </a>
         <!-- menu -->
         <nav>
@@ -43,8 +43,8 @@
                     <div id="password-output"></div>
                     <br>
                     <div class="button-container">
-                        <button type="button" id="generate-button" class="button">Generate</button>
-                        <button type="button" id="save-button" class="button">Save Password</button>
+                        <button type="button" id="generate-button" class="button" aria-label="Generate password">Generate</button>
+                        <button type="button" id="save-button" class="button" aria-label="Save password">Save Password</button>
                     </div>
                     <br>
                     <label for="length">Password Length: <span id="length-value">12</span></label>
@@ -53,10 +53,14 @@
                     <label>Character Types:</label>
                     <!-- password generator characters -->
                     <form>
-                        <label><input type="checkbox" id="lowercase" name="lowercase" checked> Lowercase (a-z)</label>
-                        <label><input type="checkbox" id="uppercase" name="uppercase" checked> Uppercase (A-Z)</label>
-                        <label><input type="checkbox" id="numbers" name="numbers" checked> Numbers (0-9)</label>
-                        <label><input type="checkbox" id="symbols" name="symbols" checked> Symbols (!@#$%^&*)</label>
+                        <label for="lowercase" aria-label="Include lowercase letters in password"><input type="checkbox"
+                                id="lowercase" name="lowercase" checked> Lowercase (a-z)</label>
+                        <label for="uppercase" aria-label="Include uppercase letters in password"><input type="checkbox"
+                                id="uppercase" name="uppercase" checked> Uppercase (A-Z)</label>
+                        <label for="numbers" aria-label="Include numbers in password"><input type="checkbox"
+                                id="numbers" name="numbers" checked> Numbers (0-9)</label>
+                        <label for="symbols" aria-label="Include symbols in password"><input type="checkbox"
+                                id="symbols" name="symbols" checked> Symbols (!@#$%^&*)</label>
                     </form>
                 </div>
             </div>
@@ -76,7 +80,7 @@
             <div id="faq-container">
                 <!-- question -->
                 <div class="accordion">
-                    <button class="accordion-header">
+                    <button class="accordion-header" aria-label="Expand/Collapse question">
                         <span>
                             What makes a password strong?
                         </span>
@@ -102,7 +106,7 @@
                 </div>
                 <!-- question -->
                 <div class="accordion">
-                    <button class="accordion-header">
+                    <button class="accordion-header" aria-label="Expand/Collapse question">
                         <span>
                             Why should my password be unique?
                         </span>
@@ -124,7 +128,7 @@
                 </div>
                 <!-- question -->
                 <div class="accordion">
-                    <button class="accordion-header">
+                    <button class="accordion-header" aria-label="Expand/Collapse question">
                         <span>
                             Why should my password be random?
                         </span>
@@ -150,7 +154,7 @@
                 </div>
                 <!-- question -->
                 <div class="accordion">
-                    <button class="accordion-header">
+                    <button class="accordion-header" aria-label="Expand/Collapse question">
                         <span>
                             How do password generators work?
                         </span>
@@ -177,7 +181,7 @@
                 </div>
                 <!-- question -->
                 <div class="accordion">
-                    <button class="accordion-header">
+                    <button class="accordion-header" aria-label="Expand/Collapse question">
                         <span>
                             Is a Password Generator safe to use?
                         </span>
@@ -204,7 +208,7 @@
                 </div>
                 <!-- question -->
                 <div class="accordion">
-                    <button class="accordion-header">
+                    <button class="accordion-header" aria-label="Expand/Collapse question">
                         <span>
                             What are the requirements for a strong password?
                         </span>
@@ -233,7 +237,7 @@
                 </div>
                 <!-- question -->
                 <div class="accordion">
-                    <button class="accordion-header">
+                    <button class="accordion-header" aria-label="Expand/Collapse question">
                         <span>
                             Can password generators be hacked?
                         </span>
@@ -262,7 +266,7 @@
                 </div>
                 <!-- question -->
                 <div class="accordion">
-                    <button class="accordion-header">
+                    <button class="accordion-header" aria-label="Expand/Collapse question">
                         <span>
                             What are the top 10 worst passwords?
                         </span>
@@ -311,7 +315,7 @@
                     class="fa-brands fa-facebook fa-2xl"></i></a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Go to our Instagram page"><i
                     class="fa-brands fa-instagram fa-2xl"></i></a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Go to your X/Twitter page"><i
+            <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Go to our X/Twitter page"><i
                     class="fa-brands fa-x-twitter fa-2xl"></i></a>
         </div>
     </footer>
