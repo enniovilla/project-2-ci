@@ -49,6 +49,10 @@ Visit the deployed website here → [Password Generator](https://enniovilla.gith
 
 ### Website Structure
 
+I wanted to create a website with 3-4 pages, but when I got to the end and saw the finished work, it made more sense to create just one page divided into sections, since the website isn't that big and doesn't have that much content.
+
+The html on my website contains three sections: the password generator section, the saved passwords section and the frequently asked questions section. These sections are one below the other, making the navigation of the website much smoother and more dynamic.
+
 ### Wireframes
 
 Figma was the software I opted to create the wireframes. I created wireframes for mobile and desktop. Click on the button below to see them.
