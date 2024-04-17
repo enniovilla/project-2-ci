@@ -74,7 +74,7 @@ Question container opened<br>
 I wanted this website to be clean and simple so I chose a contrast of light and dark colors.
 
 - the most used colors were `#EFEFD0` and `#004E89`, which also make up the background gradient.
-- `#FF0000` was chosen as the color to represent the delete buttons.
+- `#A30000` was chosen as the color to represent the delete buttons.
 - `#F9F9F9` is the color of the password display, making the background not so aggressive because of the white, but at the same time light enough to make the color of the characters stand out.
 - The hover of the main buttons is colored `#FF6B35`, giving a nice contrast to them.
 
@@ -131,7 +131,7 @@ In the future I would like to add a login page, sign up page and dashboard, so t
 - [Font Awesome](https://fontawesome.com/) to add icons on the website.
 - [Appetize.io](https://appetize.io/) to simulate the iOS environment.
 - [WebAIM](https://webaim.org/resources/contrastchecker/) to check the contrast on my html and improve accessibility.
-- [SweetAlert](https://sweetalert2.github.io/) to style the alert alert messages.
+- [SweetAlert](https://sweetalert2.github.io/) to style the alert messages.
 
 [Back to top](<#content>)
 
@@ -170,7 +170,7 @@ Performed tests can be found in [TESTING.md](TESTING.md).
 
 ## Bugs
 
-### Known Bugs
+I couldn't find any errors after my tests.
 
 [Back to top](<#content>)
 
@@ -180,6 +180,13 @@ Performed tests can be found in [TESTING.md](TESTING.md).
 
 ## Media
 
+I haven't used any external media on my website.
+
 ## Acknowledgments
+
+I would like to acknowledge:
+
+- Kay Welfare - My cohort facilitator.
+- Jubril Akolade - My Code Institute mentor.
 
 [Back to top](<#content>)
