@@ -10,7 +10,7 @@ Visit the deployed website here → [Password Generator](https://enniovilla.gith
 * [Manual Testing](#manual-testing)
     * [Browser Testing](#browser-testing)
 * [Automated Testing](#automated-testing)
-    * [W3C Validator](#w3c-validator)
+    * [HTML Validator](#html-validator)
     * [CSS Validator](#css-validator)
     * [JavaScript Validator](#javascript-validator)
     * [Lighthouse](#lighthouse)
@@ -46,6 +46,7 @@ I tested all the buttons and links throughout the creation of the website and di
 | Stylized buttons | Change color when the mouse hovers on them.| Hovered mouse over buttons. | The color changes. |
 | Generate button | Randomly generate a new password according to the length and character types chosen. | Generated passwords with different lengths and characters. | A new password is always generated. |
 | Save Password button | Save the password in the area below the password generator. | Clicked saved password button. | The password is saved. |
+| Save Password message | Pops up and alert informing the user that the password has been saved. | Clicked saved password button. | The message showed up. |
 | Range bar | Change the password characters length as the range bar increases/decreases. | Increased/decreased the range bar. | The number of characters in the password changes. |
 | Checkbox for specific characters | Select/unselect characters. | Selected/unselected the checkboxes. | The characters were selected/unselected. |
 | Character types not selected | Show an alert informing the user to select a character type to generate a password. | Unselected all the checkboxes. | The alert pops up. |
@@ -67,6 +68,8 @@ I tested the website in different browsers, both on computer and mobile.
 | Mozilla Firefox | The website is responsive. |
 | Opera | The website is responsive. |
 | Safari | The website is responsive. |
+
+[Back to top](<#content>)
 
 ## Automated Testing
 
