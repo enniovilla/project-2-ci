@@ -190,7 +190,7 @@ form label {
     line-height: 25px;
 }
 
-.saved-passwords-container h2 {
+.saved-passwords-container h2, .saved-passwords-container p {
     margin-bottom: 20px;
 }
 
