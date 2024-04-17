@@ -1,6 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('generate-button').addEventListener('click', generatePassword);
 
+    // function to delete all passwords
+    function deleteAllPasswords() {
+        // reset confirmationShown to false
+        confirmationShown = false;
+
+        // ask the user for confirmation before deleting all passwords
+        const confirmDeleteAll = confirm('Are you sure you want to delete all passwords? This action cannot be undone.');
+
+        if (confirmDeleteAll) {
+            const savedPasswordsDiv = document.getElementById('saved-passwords');
+            // clear the saved passwords div
+            savedPasswordsDiv.innerHTML = '';
+        }
+    }
+
+    // initialize a variable to track if confirmation has been shown
+    let confirmationShown = false;
+
+    // add event listener to the "Delete All Passwords" button
+    document.getElementById('delete-all').addEventListener('click', function () {
+        deleteAllPasswords();
+    });
+
     function generatePassword() {
         // selected options
         const length = document.getElementById('length').value;
@@ -77,20 +100,6 @@ document.addEventListener('DOMContentLoaded', function () {
             // inform the user that they need to delete a password before saving a new one
             alert('You already have 10 saved passwords. Please delete one of them before saving a new password.');
             return;
-        }
-
-        // delete all passwords when the "Delete All Passwords" button is clicked
-        document.getElementById('delete-all').addEventListener('click', deleteAllPasswords);
-
-        function deleteAllPasswords() {
-            const savedPasswordsDiv = document.getElementById('saved-passwords');
-
-            // ask the user for confirmation before deleting all passwords
-            const confirmDeleteAll = confirm('Are you sure you want to delete all passwords? This action cannot be undone.');
-            if (confirmDeleteAll) {
-                // clear the saved passwords div
-                savedPasswordsDiv.innerHTML = '';
-            }
         }
 
         // create a new div element to hold the saved password
