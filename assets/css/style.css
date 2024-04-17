@@ -187,7 +187,6 @@ form label {
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     text-align: center;
-    word-break: break-all;
     line-height: 25px;
 }
 
@@ -201,10 +200,14 @@ form label {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    word-break: break-all;
 }
 
 #saved-passwords div {
-    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
 #faq-section {
