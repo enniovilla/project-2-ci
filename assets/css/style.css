@@ -301,7 +301,7 @@ form label {
     transition: transform .2s linear;
 }
 
-.accordion:has(.active) .arrow {
+.accordion:has(>.active) .arrow {
     transform: rotate(180deg);
 }
 
