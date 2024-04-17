@@ -97,6 +97,14 @@ document.addEventListener('DOMContentLoaded', function () {
             deleteButton.style.color = 'black';
         });
 
+        // add confirmation message for deleting password
+        deleteButton.addEventListener('click', function () {
+            const confirmDelete = confirm('Are you sure you want to delete this password?');
+            if (confirmDelete) {
+                savedPasswordsDiv.removeChild(passwordDiv);
+            }
+        });
+
         // append the delete button and saved password div to the #saved-passwords div
         passwordDiv.appendChild(deleteButton);
         savedPasswordsDiv.appendChild(passwordDiv);
