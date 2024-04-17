@@ -269,6 +269,7 @@ form label {
     justify-content: space-between;
     font-size: 16px;
     cursor: pointer;
+    text-align: left;
 }
 
 .accordion-header span {
