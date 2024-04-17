@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // moved declaration outside of the event listener
+    const savedPasswordsDiv = document.getElementById('saved-passwords');
+
     document.getElementById('generate-button').addEventListener('click', generatePassword);
 
     // function to delete all passwords
     function deleteAllPasswords() {
         // reset confirmationShown to false
         confirmationShown = false;
-
-        const savedPasswordsDiv = document.getElementById('saved-passwords');
 
         // check if there are any saved passwords
         if (savedPasswordsDiv.children.length === 0) {
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Are you sure you want to delete all passwords?',
             text: 'This action cannot be undone.',
             background: '#efefd0',
-            icon: "warning",
+            icon: 'warning',
             iconColor: '#a30000',
             showCancelButton: true,
             confirmButtonColor: '#008000',
@@ -32,19 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire({
-                    title: "Deleted!",
-                    text: "Your file has been deleted.",
+                    title: 'Deleted!',
+                    iconColor: '#008000',
+                    text: 'Your passwords have been deleted.',
                     background: '#efefd0',
-                    icon: "success"
+                    icon: 'success'
                 });
+                // clear the saved passwords div
+                savedPasswordsDiv.innerHTML = '';
             }
         });
-
-        if (confirmDeleteAll) {
-            const savedPasswordsDiv = document.getElementById('saved-passwords');
-            // clear the saved passwords div
-            savedPasswordsDiv.innerHTML = '';
-        }
     }
 
     // initialize a variable to track if confirmation has been shown
@@ -127,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function savePassword() {
         const generatedPassword = document.getElementById('password-output').textContent;
-        const savedPasswordsDiv = document.getElementById('saved-passwords');
 
         // check if the generated password is already saved
         const savedPasswords = savedPasswordsDiv.querySelectorAll('div');
@@ -165,31 +162,9 @@ document.addEventListener('DOMContentLoaded', function () {
         deleteButton.style.cursor = 'pointer';
         deleteButton.style.marginLeft = '5px';
 
-        // add confirmation message for deleting password
+        // add event listener for the delete button
         deleteButton.addEventListener('click', function () {
-            const confirmDelete = Swal.fire({
-                title: "Are you sure you want to delete this password?",
-                text: "You won't be able to revert this!",
-                icon: "warning",
-                iconColor: '#a30000',
-                background: '#efefd0',
-                showCancelButton: true,
-                confirmButtonColor: "#008000",
-                cancelButtonColor: '#a30000',
-                confirmButtonText: "Yes"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire({
-                        title: "Deleted!",
-                        text: "Your file has been deleted.",
-                        background: '#efefd0',
-                        icon: "success"
-                    });
-                }
-            });
-            if (confirmDelete) {
-                savedPasswordsDiv.removeChild(passwordDiv);
-            }
+            deletePassword(passwordDiv);
         });
 
         // append the delete button and saved password div to the #saved-passwords div
@@ -200,6 +175,33 @@ document.addEventListener('DOMContentLoaded', function () {
         Swal.fire({
             title: 'Password saved successfully!',
             background: '#efefd0'
+        });
+    }
+
+    // function to delete a single password
+    function deletePassword(passwordDiv) {
+        const confirmDelete = Swal.fire({
+            title: 'Are you sure you want to delete this password?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            iconColor: '#a30000',
+            background: '#efefd0',
+            showCancelButton: true,
+            confirmButtonColor: '#008000',
+            cancelButtonColor: '#a30000',
+            confirmButtonText: 'Yes'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // remove the password div if the user confirms
+                savedPasswordsDiv.removeChild(passwordDiv);
+                Swal.fire({
+                    title: 'Deleted!',
+                    text: 'Your password has been deleted.',
+                    iconColor: '#008000',
+                    background: '#efefd0',
+                    icon: 'success'
+                });
+            }
         });
     }
 });
