@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // check if there are any saved passwords
         if (savedPasswordsDiv.children.length === 0) {
             // no passwords to delete, show an alert
-            Swal.fire("You don't have passwords to delete.");
+            Swal.fire({
+                title: "You don't have passwords to delete.",
+                background: '#efefd0'
+            });
             return;
         }
 
@@ -19,16 +22,19 @@ document.addEventListener('DOMContentLoaded', function () {
         const confirmDeleteAll = Swal.fire({
             title: 'Are you sure you want to delete all passwords?',
             text: 'This action cannot be undone.',
+            background: '#efefd0',
             icon: "warning",
+            iconColor: '#a30000',
             showCancelButton: true,
-            confirmButtonColor: '#54b059',
-            cancelButtonColor: "#d33",
+            confirmButtonColor: '#008000',
+            cancelButtonColor: '#a30000',
             confirmButtonText: 'Yes'
         }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire({
                     title: "Deleted!",
                     text: "Your file has been deleted.",
+                    background: '#efefd0',
                     icon: "success"
                 });
             }
@@ -66,7 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // check if at least one character type is selected
         if (characters.length === 0) {
-            Swal.fire('Please select at least one character type.');
+            Swal.fire({
+                title: 'Please select at least one character type.',
+                background: '#efefd0'
+            });
             return;
         }
         let password = '';
@@ -124,7 +133,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const savedPasswords = savedPasswordsDiv.querySelectorAll('div');
         for (let i = 0; i < savedPasswords.length; i++) {
             if (savedPasswords[i].textContent === generatedPassword) {
-                Swal.fire('This password is already saved.');
+                Swal.fire({
+                    title: 'This password is already saved.',
+                    background: '#efefd0'
+                });
                 return;
             }
         }
@@ -132,7 +144,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // max saved passwords = 10
         if (savedPasswordsDiv.children.length >= 10) {
             // inform the user that they need to delete a password before saving a new one
-            Swal.fire('You already have 10 saved passwords. Please delete one of them before saving a new password.');
+            Swal.fire({
+                title: 'You already have 10 saved passwords. Please delete one of them before saving a new password.',
+                background: '#efefd0'
+            });
             return;
         }
 
@@ -156,15 +171,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: "Are you sure you want to delete this password?",
                 text: "You won't be able to revert this!",
                 icon: "warning",
+                iconColor: '#a30000',
+                background: '#efefd0',
                 showCancelButton: true,
-                confirmButtonColor: "#54b059",
-                cancelButtonColor: "#d33",
+                confirmButtonColor: "#008000",
+                cancelButtonColor: '#a30000',
                 confirmButtonText: "Yes"
             }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire({
                         title: "Deleted!",
                         text: "Your file has been deleted.",
+                        background: '#efefd0',
                         icon: "success"
                     });
                 }
@@ -179,6 +197,9 @@ document.addEventListener('DOMContentLoaded', function () {
         savedPasswordsDiv.appendChild(passwordDiv);
 
         // alert user that the password has been saved
-        Swal.fire('Password saved successfully!');
+        Swal.fire({
+            title: 'Password saved successfully!',
+            background: '#efefd0'
+        });
     }
 });
