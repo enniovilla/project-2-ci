@@ -69,9 +69,13 @@ I tested the website in different browsers, both on computer and mobile.
 
 ## Automated Testing
 
-### W3C Validator
+### HTML Validator
+[W3C](https://validator.w3.org/) checked the HTML of the website and it passed the validation. A warning message shows up in due to importing the font from Google Fonts.
+- [HTML validation](documentation/testing/html-validation.pdf)
 
 ### CSS Validator
+The CSS was validated by [W3C Jigsaw](https://jigsaw.w3.org/css-validator/) and passed the test. To see the full result, click on the name below.
+- [CSS](documentation/testing/css-validation.pdf)
 
 ### Lighthouse
 
