@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
         accordion.addEventListener('click', () => {
             const body = accordion.querySelector('.accordion-body');
             body.classList.toggle('active');
-        })
-    })
+        });
+    });
 
     // save generated password when the save button is clicked
     document.getElementById('save-button').addEventListener('click', savePassword);
