@@ -79,6 +79,20 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
+        // delete all passwords when the "Delete All Passwords" button is clicked
+        document.getElementById('delete-all').addEventListener('click', deleteAllPasswords);
+
+        function deleteAllPasswords() {
+            const savedPasswordsDiv = document.getElementById('saved-passwords');
+
+            // ask the user for confirmation before deleting all passwords
+            const confirmDeleteAll = confirm('Are you sure you want to delete all passwords? This action cannot be undone.');
+            if (confirmDeleteAll) {
+                // clear the saved passwords div
+                savedPasswordsDiv.innerHTML = '';
+            }
+        }
+
         // create a new div element to hold the saved password
         const passwordDiv = document.createElement('div');
         passwordDiv.textContent = generatedPassword;
