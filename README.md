@@ -130,6 +130,7 @@ In the future I would like to add a login page, sign up page and dashboard, so t
 - [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/) to display the website across multiple devices.
 - [Font Awesome](https://fontawesome.com/) to add icons on the website.
 - [Appetize.io](https://appetize.io/) to simulate the iOS environment.
+- [Web Formatter](https://webformatter.com/) to format my HTML, CSS and JavaScript, making them readable and pretty, with the proper indentation..
 
 [Back to top](<#content>)
 
