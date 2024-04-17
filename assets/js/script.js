@@ -11,12 +11,28 @@ document.addEventListener('DOMContentLoaded', function () {
         // check if there are any saved passwords
         if (savedPasswordsDiv.children.length === 0) {
             // no passwords to delete, show an alert
-            alert("You don't have passwords to delete.");
+            Swal.fire("You don't have passwords to delete.");
             return;
         }
 
         // ask the user for confirmation before deleting all passwords
-        const confirmDeleteAll = confirm('Are you sure you want to delete all passwords? This action cannot be undone.');
+        const confirmDeleteAll = Swal.fire({
+            title: 'Are you sure you want to delete all passwords?',
+            text: 'This action cannot be undone.',
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: '#54b059',
+            cancelButtonColor: "#d33",
+            confirmButtonText: 'Yes'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+            }
+        });
 
         if (confirmDeleteAll) {
             const savedPasswordsDiv = document.getElementById('saved-passwords');
@@ -50,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // check if at least one character type is selected
         if (characters.length === 0) {
-            alert('Please select at least one character type.');
+            Swal.fire('Please select at least one character type.');
             return;
         }
         let password = '';
@@ -108,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const savedPasswords = savedPasswordsDiv.querySelectorAll('div');
         for (let i = 0; i < savedPasswords.length; i++) {
             if (savedPasswords[i].textContent === generatedPassword) {
-                alert('This password is already saved.');
+                Swal.fire('This password is already saved.');
                 return;
             }
         }
@@ -116,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // max saved passwords = 10
         if (savedPasswordsDiv.children.length >= 10) {
             // inform the user that they need to delete a password before saving a new one
-            alert('You already have 10 saved passwords. Please delete one of them before saving a new password.');
+            Swal.fire('You already have 10 saved passwords. Please delete one of them before saving a new password.');
             return;
         }
 
@@ -136,7 +152,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // add confirmation message for deleting password
         deleteButton.addEventListener('click', function () {
-            const confirmDelete = confirm('Are you sure you want to delete this password?');
+            const confirmDelete = Swal.fire({
+                title: "Are you sure you want to delete this password?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#54b059",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Your file has been deleted.",
+                        icon: "success"
+                    });
+                }
+            });
             if (confirmDelete) {
                 savedPasswordsDiv.removeChild(passwordDiv);
             }
@@ -147,6 +179,6 @@ document.addEventListener('DOMContentLoaded', function () {
         savedPasswordsDiv.appendChild(passwordDiv);
 
         // alert user that the password has been saved
-        alert('Password saved successfully!');
+        Swal.fire('Password saved successfully!');
     }
 });
