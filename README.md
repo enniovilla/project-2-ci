@@ -131,6 +131,7 @@ In the future I would like to add a login page, sign up page and dashboard, so t
 - [Font Awesome](https://fontawesome.com/) to add icons on the website.
 - [Appetize.io](https://appetize.io/) to simulate the iOS environment.
 - [WebAIM](https://webaim.org/resources/contrastchecker/) to check the contrast on my html and improve accessibility.
+- [SweetAlert](https://sweetalert2.github.io/) to style the alert alert messages.
 
 [Back to top](<#content>)
 
