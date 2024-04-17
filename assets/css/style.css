@@ -57,18 +57,22 @@ a {
 
 nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     list-style-type: none;
     font-weight: 600;
 }
 
 #menu li {
-    padding: 20px 10px;
     text-align: center;
+    width: 80%;
+    padding-bottom: 20px;
 }
 
 main {
@@ -337,7 +341,7 @@ footer {
     }
 
     #generator-section {
-        padding-top: 170px;
+        padding-top: 190px;
     }
 
     .saved-passwords-container {
