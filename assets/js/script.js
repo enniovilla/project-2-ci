@@ -6,6 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
         // reset confirmationShown to false
         confirmationShown = false;
 
+        const savedPasswordsDiv = document.getElementById('saved-passwords');
+
+        // check if there are any saved passwords
+        if (savedPasswordsDiv.children.length === 0) {
+            // no passwords to delete, show an alert
+            alert("You don't have passwords to delete.");
+            return;
+        }
+
         // ask the user for confirmation before deleting all passwords
         const confirmDeleteAll = confirm('Are you sure you want to delete all passwords? This action cannot be undone.');
 
