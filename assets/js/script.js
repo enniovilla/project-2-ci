@@ -72,6 +72,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const generatedPassword = document.getElementById('password-output').textContent;
         const savedPasswordsDiv = document.getElementById('saved-passwords');
 
+        // max saved passwords = 10
+        if (savedPasswordsDiv.children.length >= 10) {
+            // inform the user that they need to delete a password before saving a new one
+            alert('You already have 10 saved passwords. Please delete one of them before saving a new password.');
+            return;
+        }
+
         // create a new div element to hold the saved password
         const passwordDiv = document.createElement('div');
         passwordDiv.textContent = generatedPassword;
