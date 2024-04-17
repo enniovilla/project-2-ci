@@ -37,10 +37,11 @@ Visit the deployed website here → [Password Generator](https://enniovilla.gith
 
 #### First Time User
 
+* I want to generate a safe and strong password.
 
 #### Returning User
 
-#### Frequent User
+* I need a new password.
 
 [Back to top](<#content>)
 
