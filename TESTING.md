@@ -57,6 +57,16 @@ I tested all the buttons and links throughout the creation of the website and di
 
 ### Browser Testing
 
+I tested the website in different browsers, both on computer and mobile.
+
+| Browser | Result |
+| :--- | :--- |
+| Google Chrome | The website is responsive. |
+| Microsoft Edge | The website is responsive. |
+| Mozilla Firefox | The website is responsive. |
+| Opera | The website is responsive. |
+| Safari | The website is responsive. |
+
 ## Automated Testing
 
 ### W3C Validator
