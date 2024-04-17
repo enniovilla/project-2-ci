@@ -78,24 +78,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // create a delete button
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'X';
+        deleteButton.innerHTML = '<i class="fa-solid fa-trash-can fa-lg"></i>';
 
-        // add styles for hover effect and cursor
-        deleteButton.style.backgroundColor = 'transparent';
+        // add style to delete button
+        deleteButton.style.color = 'red';
         deleteButton.style.border = 'none';
         deleteButton.style.cursor = 'pointer';
         deleteButton.style.marginLeft = '5px';
-
-        // add hover effect
-        deleteButton.addEventListener('mouseover', function () {
-            deleteButton.style.backgroundColor = 'red';
-            deleteButton.style.color = '#efefd0';
-        });
-
-        deleteButton.addEventListener('mouseout', function () {
-            deleteButton.style.backgroundColor = 'transparent';
-            deleteButton.style.color = 'black';
-        });
 
         // add confirmation message for deleting password
         deleteButton.addEventListener('click', function () {
