@@ -77,6 +77,10 @@ I tested the website in different browsers, both on computer and mobile.
 The CSS was validated by [W3C Jigsaw](https://jigsaw.w3.org/css-validator/) and passed the test. To see the full result, click on the name below.
 - [CSS](documentation/testing/css-validation.pdf)
 
+### JavaScript Validator
+[JSHint](https://jshint.com/) was used to validate the JavaScript. The validation passed.
+- [JavaScript](documentation)
+
 ### Lighthouse
 
 #### Mobile Results
