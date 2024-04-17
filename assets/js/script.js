@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // ask the user for confirmation before deleting all passwords
-        const confirmDeleteAll = Swal.fire({
+        Swal.fire({
             title: 'Are you sure you want to delete all passwords?',
             text: 'This action cannot be undone.',
             background: '#efefd0',
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // function to delete a single password
     function deletePassword(passwordDiv) {
-        const confirmDelete = Swal.fire({
+        Swal.fire({
             title: 'Are you sure you want to delete this password?',
             text: "You won't be able to revert this!",
             icon: 'warning',
