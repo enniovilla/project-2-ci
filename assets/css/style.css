@@ -337,7 +337,7 @@ footer {
 
 @media screen and (min-width: 479px) {
     #menu li {
-        padding: 20px 20px;
+        padding-bottom: 20px;
     }
 
     #generator-section {
@@ -346,5 +346,11 @@ footer {
 
     .saved-passwords-container {
         max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 785px) {
+    #menu li {
+        padding-bottom: 0;
     }
 }
