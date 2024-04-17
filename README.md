@@ -55,27 +55,18 @@ The html on my website contains three sections: the password generator section, 
 
 ### Wireframes
 
-Figma was the software I opted to create the wireframes. I created wireframes for mobile and desktop. Click on the button below to see them.
+I created wireframes for mobile and desktop using Figma. Click on the button below to see them.
 <details>
 <summary>Wireframes</summary>
 <br><br>
 Home page<br>
 <img src="documentation/figma-home.png">
 <br><br>
-About us page<br>
-<img src="documentation/figma-aboutus.png">
+FAQ page<br>
+<img src="documentation/figma-faq.png">
 <br><br>
 Courses page<br>
-<img src="documentation/figma-courses.png">
-<br><br>
-Gallery page<br>
-<img src="documentation/figma-gallery.png">
-<br><br>
-Contact page<br>
-<img src="documentation/figma-contact.png">
-<br><br>
-Sign Up page<br>
-<img src="documentation/figma-signup.png">
+<img src="documentation/figma-faq-open.png">
 </details>
 
 ### Color Scheme
