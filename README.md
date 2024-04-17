@@ -90,21 +90,28 @@ The font I chose to use is [Montserrat](https://fonts.google.com/specimen/Montse
 
 ### Features
 
-### The Home Page
+This is a single page website that includes three sections: Password Generator, Saved Passwords and Frequently Asked Questions.
 
-### The About Us Page
+As soon as the user opens the website, he is presented with:
 
-### The Courses Page
+- A favicon.<br>
+![Favicon](documentation/favicon-browser.png)
 
-### Gallery Page
+- The menu.<br>
+![Menu](documentation/menu.png)
 
-### Contact Page
+- The password generator which contains a button to generate a new password, a button to save the password, a range bar to adjust the length of the password and checkboxes to select which type of character they want in the password.<br>
+![Password Generator](documentation/password-generator.gif)
 
-### Sign Up Page
+- The saved passwords area where the user can save up to 10 passwords. This area contains a button to delete all passwords at once and each time a password is generated, it is generated with an icon to delete the password singularly.<br>
+![Saved Passwords](documentation/saved-passwords.gif)
 
-### Form Submitted Page
+- The frequently asked questions section which is an accordion, saving space on the screen.<br>
+![FAQ](documentation/faq.gif)
 
 ### Future Features
+
+In the future I would like to add a login page, sign up page and dashboard, so the user can control the passwords a little better and make them safe. The plan is to turn this website into a password manager.
 
 [Back to top](<#content>)
 
