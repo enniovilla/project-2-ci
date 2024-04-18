@@ -38,7 +38,6 @@ header>a {
     align-items: center;
     text-align: center;
     margin: 20px;
-
 }
 
 h1 {
@@ -356,6 +355,7 @@ footer {
     font-size: 50px;
     margin-bottom: 20px;
 }
+
 .error404-container p {
     font-size: 30px;
     margin-bottom: 20px;
