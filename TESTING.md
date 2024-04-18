@@ -84,7 +84,7 @@ The CSS was validated by [W3C Jigsaw](https://jigsaw.w3.org/css-validator/) and 
 
 ### JavaScript Validator
 [JSHint](https://jshint.com/) was used to validate the JavaScript. The validation passed.
-- [JavaScript](documentation)
+- [JavaScript](documentation/testing/js-validation.pdf)
 
 ### Lighthouse
 
@@ -101,7 +101,7 @@ Index<br>
 - Desktop
 
 Index<br>
-![Desktop](documentation/lighthouse/desktop.png)<br>
+![Desktop](documentation/lighthouse/desktop-index.png)<br>
 
 404<br>
 ![404](documentation/lighthouse/desktop-404.gif)<br>
