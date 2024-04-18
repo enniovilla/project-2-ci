@@ -52,6 +52,8 @@ I wanted to create a website with 3-4 pages, but when I got to the end and saw t
 
 The html on my website contains three sections: the password generator section, the saved passwords section and the frequently asked questions section. These sections are one below the other, making the navigation of the website much smoother and more dynamic.
 
+There is another html file in the directory for the 404 error, which has been styled to match my website if a 404 error occurs.
+
 ### Wireframes
 
 I created wireframes for mobile and desktop using Figma. Click on the button below to see them.
