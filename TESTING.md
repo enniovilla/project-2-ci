@@ -92,10 +92,18 @@ I used Lighthouse to test the full performance of the website.
 
 - Mobile
 
-![Mobile](documentation/lighthouse/mobile.png)
+Index<br>
+![Main](documentation/lighthouse/mobile-index.png)<br>
+
+404<br>
+![404](documentation/lighthouse/mobile-404.png)<br>
 
 - Desktop
 
-![Desktop](documentation/lighthouse/desktop.png)
+Index<br>
+![Desktop](documentation/lighthouse/desktop.png)<br>
+
+404<br>
+![404](documentation/lighthouse/desktop-404.gif)<br>
 
 [Back to top](<#content>)
