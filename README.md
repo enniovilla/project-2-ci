@@ -6,7 +6,7 @@ Visit the deployed website here → [Password Generator](https://enniovilla.gith
 
 ![Password Generator](documentation/am-i-responsive.png)
 
-## Table of Contents
+## Contents
 
 * [User Experience](#user-experience-ux)
 * [Design](#design)
@@ -43,7 +43,7 @@ Visit the deployed website here → [Password Generator](https://enniovilla.gith
 
 * I need a new password.
 
-[Back to top](<#table-of-contents>)
+[Back to top](<#contents>)
 
 ## Design
 
@@ -86,7 +86,7 @@ I wanted this website to be clean and simple so I chose a contrast of light and 
 
 The font I chose to use is [Montserrat](https://fonts.google.com/specimen/Montserrat) from Google Fonts and as a fall back font, sans-serif.
 
-[Back to top](<#table-of-contents>)
+[Back to top](<#contents>)
 
 ## Features and Future Features
 
@@ -118,7 +118,7 @@ As soon as the user opens the website, he is presented with:
 
 In the future I would like to add a login page, sign up page and dashboard, so the user can control the passwords a little better and make them safe. The plan is to turn this website into a password manager.
 
-[Back to top](<#table-of-contents>)
+[Back to top](<#contents>)
 
 ## Technologies Used
 
@@ -138,7 +138,7 @@ In the future I would like to add a login page, sign up page and dashboard, so t
 - [WebAIM](https://webaim.org/resources/contrastchecker/) to check the contrast on my html and improve accessibility.
 - [SweetAlert](https://sweetalert2.github.io/) to style the alert messages.
 
-[Back to top](<#table-of-contents>)
+[Back to top](<#contents>)
 
 ## Deployment, Fork and Clone
 
@@ -165,7 +165,7 @@ In the future I would like to add a login page, sign up page and dashboard, so t
 4. Navigate to the directory where you want to clone the repository and open terminal.
 5. Type *git clone* into the terminal and paste the link you have from number 3. Press enter. This command will download the entire repository to your local machine.
 
-[Back to top](<#table-of-contents>)
+[Back to top](<#contents>)
 
 ## Tests and Bugs
 
@@ -177,7 +177,7 @@ Performed tests can be found in [TESTING.md](TESTING.md).
 
 I couldn't find any errors after my tests.
 
-[Back to top](<#table-of-contents>)
+[Back to top](<#contents>)
 
 ## Credits
 
@@ -207,4 +207,4 @@ I would like to acknowledge:
 - Kay Welfare - My cohort facilitator.
 - Jubril Akolade - My Code Institute mentor.
 
-[Back to top](<#table-of-contents>)
+[Back to top](<#contents>)

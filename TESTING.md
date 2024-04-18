@@ -33,6 +33,8 @@ Visit the deployed website here → [Password Generator](https://enniovilla.gith
 | I want to generate a new password. | The user can generate a new password with multiple characters within seconds. |
 | I want to check my saved passwords. | The saved passwords are saved right below the password generator making it easier to find them. |
 
+[Back to top](<#content>)
+
 ## Manual Testing
 
 I tested all the buttons and links throughout the creation of the website and did a final test. The result of the final test is below.
