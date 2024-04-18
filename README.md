@@ -175,7 +175,14 @@ I couldn't find any errors after my tests.
 
 ## Credits
 
-
+* I watched four tutorials to learn how to make the password generator and in the end I ended up mixing up a bit of the methodology taught in each video.
+    * [Web Div Simplified](https://www.youtube.com/watch?v=vjco5yKZpU8)
+    * [Traversy Media](https://www.youtube.com/watch?v=duNmhKgtcsI)
+    * [Tyler Potts](https://www.youtube.com/watch?v=XH7CzSZ-9gY)
+    * [James Q Quick](https://www.youtube.com/watch?v=O-79Cb5s9U4)
+* I looked for help with the accordion in [Larissa Kich's](https://www.youtube.com/watch?v=clSHRmb5yiI) video.
+* To change color of input type range, to debug my project and to fix some minor errors after validation, I looked for tips on [Stack Overflow](https://stackoverflow.com/).
+* [W3Schools](https://www.w3schools.com/) was used for general queries and as reference to check syntax for coding.
 
 ## Content
 
