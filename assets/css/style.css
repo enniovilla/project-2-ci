@@ -329,6 +329,40 @@ footer {
     margin-top: 20px;
 }
 
+.error404 {
+    background: radial-gradient(circle, #efefd0, #a4cbae, #51a6a2, #007c9d, #004e89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.error404-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 40px;
+    background-color: #efefd0;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.error404-container h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.error404-container p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.error404-container a {
+    font-size: 20px;
+}
+
 @media screen and (min-width: 442px) {
     #generator-section {
         padding-top: 170px;
