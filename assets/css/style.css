@@ -146,6 +146,7 @@ h2 {
 input[type='range'],
 input[type="checkbox"] {
     accent-color: #004e89;
+    cursor: pointer;
 }
 
 form {
@@ -206,6 +207,7 @@ form label {
     color: #f0f0d1;
     font-weight: bold;
     margin: 10px 0 20px;
+    cursor: pointer;
 }
 
 #delete-all:hover {
