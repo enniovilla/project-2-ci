@@ -95,20 +95,23 @@ This is a single page website that includes three sections: Password Generator, 
 
 As soon as the user opens the website, he is presented with:
 
-- A favicon.<br>
-![Favicon](documentation/favicon-browser.png)
+- A favicon.<br><br>
+![Favicon](documentation/favicon-browser.png)<br><br>
 
-- The menu.<br>
-![Menu](documentation/menu.png)
+- The menu.<br><br>
+![Menu](documentation/menu.png)<br><br>
 
-- The password generator which contains a button to generate a new password, a button to save the password, a range bar to adjust the length of the password and checkboxes to select which type of character they want in the password.<br>
-![Password Generator](documentation/password-generator.gif)
+- The password generator which contains a button to generate a new password, a button to save the password, a range bar to adjust the length of the password and checkboxes to select which type of character they want in the password.<br><br>
+![Password Generator](documentation/password-generator.gif)<br><br>
 
-- The saved passwords area where the user can save up to 10 passwords. This area contains a button to delete all passwords at once and each time a password is generated, it is generated with an icon to delete the password singularly.<br>
-![Saved Passwords](documentation/saved-passwords.gif)
+- The saved passwords area where the user can save up to 10 passwords. This area contains a button to delete all passwords at once and each time a password is generated, it is generated with an icon to delete the password singularly.<br><br>
+![Saved Passwords](documentation/saved-passwords.gif)<br><br>
 
-- The frequently asked questions section which is an accordion, saving space on the screen.<br>
-![FAQ](documentation/faq.gif)
+- The frequently asked questions section which is an accordion, saving space on the screen.<br><br>
+![FAQ](documentation/faq.gif)<br><br>
+
+- 404 error page.<br><br>
+![404](documentation/404.png)<br><br>
 
 ### Future Features
 
