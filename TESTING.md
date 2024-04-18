@@ -25,7 +25,7 @@ Visit the deployed website here → [Password Generator](https://enniovilla.gith
 | I want to save my passwords for future reference. | I have created an area where the user can save the passwords. |
 | I want the website to have easy navigation. | I have created a single page website. The user just have to scroll down or click the buttons in the navigation bar. |
 | I want responsiveness from my website. | The website has full responsiveness. |
-
+<br>
 - Returning Visitors
 
 | Expectation | Result |
@@ -56,6 +56,7 @@ I tested all the buttons and links throughout the creation of the website and di
 | Delete password confirmation | A message pops up asking if the user wants to delete the password. | Clicked delete icon. | The message pops up and deletes the password if confirmed, otherwise the message can be closed doing nothing. |
 | Frequently Asked Questions accordion | Open and close the question window. | Clicked each accordion unit. | The message is opened/closed. |
 | Social media links | Social media links should open externally. | Clicked on social media icons at the bottom of the page. | The links open externally. |
+<br>
 
 ### Browser Testing
 
