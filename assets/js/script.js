@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // check if there are any saved passwords
         if (savedPasswordsDiv.children.length === 0) {
-            // no passwords to delete, show an alert
+            // no passwords to delete, show an alert. SweetAlert notification library used to replace alert functions.
             Swal.fire({
                 title: "You don't have passwords to delete.",
                 color: '#000000',
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // ask the user for confirmation before deleting all passwords
+        // ask the user for confirmation before deleting all passwords. SweetAlert notification library used to replace alert functions.
         Swal.fire({
             title: 'Are you sure you want to delete all passwords?',
             text: 'This action cannot be undone.',
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             confirmButtonText: 'Yes'
         }).then((result) => {
             if (result.isConfirmed) {
+                // SweetAlert notification library used to replace alert functions
                 Swal.fire({
                     title: 'Deleted!',
                     iconColor: '#008000',
@@ -75,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // check if at least one character type is selected
         if (characters.length === 0) {
+            // SweetAlert notification library used to replace alert functions
             Swal.fire({
                 title: 'Please select at least one character type.',
                 color: '#000000',
@@ -137,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const savedPasswords = savedPasswordsDiv.querySelectorAll('div');
         for (let i = 0; i < savedPasswords.length; i++) {
             if (savedPasswords[i].textContent === generatedPassword) {
+                // SweetAlert notification library used to replace alert functions
                 Swal.fire({
                     title: 'This password is already saved.',
                     confirmButtonColor: '#004e89',
@@ -149,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // max saved passwords = 10
         if (savedPasswordsDiv.children.length >= 10) {
-            // inform the user that they need to delete a password before saving a new one
+            // inform the user that they need to delete a password before saving a new one. SweetAlert notification library used to replace alert functions
             Swal.fire({
                 title: 'You already have 10 saved passwords. Please delete one of them before saving a new password.',
                 confirmButtonColor: '#004e89',
@@ -182,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
         passwordDiv.appendChild(deleteButton);
         savedPasswordsDiv.appendChild(passwordDiv);
 
-        // alert user that the password has been saved
+        // alert user that the password has been saved. SweetAlert notification library used to replace alert functions
         Swal.fire({
             title: 'Password saved successfully!',
             confirmButtonColor: '#004e89',
@@ -193,6 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // function to delete a single password
     function deletePassword(passwordDiv) {
+        // SweetAlert notification library used to replace alert functions
         Swal.fire({
             title: 'Are you sure you want to delete this password?',
             text: "You won't be able to revert this!",
@@ -208,6 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (result.isConfirmed) {
                 // remove the password div if the user confirms
                 savedPasswordsDiv.removeChild(passwordDiv);
+                // SweetAlert notification library used to replace alert functions
                 Swal.fire({
                     title: 'Deleted!',
                     text: 'Your password has been deleted.',
